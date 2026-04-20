@@ -1,0 +1,267 @@
+#sobre {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.sobreSection {
+    position: relative;
+    min-height: 100vh;
+    padding: 4rem 0 6rem;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sobreContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sobreInfo {
+    flex: 1;
+}
+
+.sobreHeader {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.sobretitulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: block;
+    position: relative;
+}
+
+.sobretitulo::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #0070f3, #00c9ff);
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.descricao {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.profileImageContainer {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImageWrapper {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(90deg, #0070f3, #00c9ff);
+    box-shadow: 0 10px 30px rgba(0, 112, 243, 0.2);
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 112, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 112, 243, 0);
+    }
+}
+
+.techSection {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.techTitle {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.techDescription {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #666;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrollIndicatorWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    height: 80px;
+}
+
+.scrollIndicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+    z-index: 4;
+    width: auto;
+    position: relative;
+}
+
+.scrollIcon {
+    font-size: 1.8rem;
+    color: #0070f3;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.scrollText {
+    font-size: 0.9rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.scrollIndicator:hover .scrollIcon,
+.scrollIndicator:hover .scrollText {
+    color: #00c9ff;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sobreContent {
+        gap: 2rem;
+    }
+    
+    .profileImageWrapper {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobreContent {
+        flex-direction: column-reverse;
+    }
+    
+    .sobreHeader {
+        text-align: center;
+    }
+    
+    .sobretitulo::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .profileImageContainer {
+        margin-bottom: 2rem;
+    }
+    
+    .profileImageWrapper {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .scrollIndicatorWrapper {
+        margin-top: 2rem;
+    }
+    
+    .techSection {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profileImageWrapper {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .sobretitulo {
+        font-size: 2rem;
+    }
+    
+    .descricao {
+        font-size: 1rem;
+    }
+    
+    .scrollIndicatorWrapper {
+        margin-top: 1.5rem;
+    }
+    
+    .sobreSection {
+        padding: 3rem 0 5rem;
+    }
+}

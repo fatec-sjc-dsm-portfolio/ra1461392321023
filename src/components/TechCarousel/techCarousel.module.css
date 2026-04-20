@@ -1,0 +1,134 @@
+.carouselContainer {
+    position: relative;
+    overflow: hidden;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.carouselInner {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carouselItem {
+    flex: 0 0 calc(100% / 7); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carouselItem:hover {
+    transform: translateY(-10px);
+}
+
+.techIcon {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+    color: #0070f3;
+    transition: color 0.3s;
+}
+
+.techName {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #0070f3;
+    transition: all 0.3s ease;
+}
+
+.carouselButton:hover {
+    background-color: #0070f3;
+    color: white;
+}
+
+.prevButton {
+    left: 0;
+}
+
+.nextButton {
+    right: 0;
+}
+
+.carouselIndicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.activeIndicator {
+    background-color: #0070f3;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .carouselItem {
+        flex: 0 0 calc(100% / 5);
+    }
+    
+    .techIcon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carouselItem {
+        flex: 0 0 calc(100% / 3);
+    }
+    
+    .techIcon {
+        font-size: 2rem;
+    }
+    
+    .techName {
+        font-size: 0.8rem;
+    }
+    
+    .carouselButton {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carouselContainer {
+        padding: 0 2rem;
+    }
+}
