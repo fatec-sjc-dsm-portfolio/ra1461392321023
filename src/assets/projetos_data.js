@@ -4,12 +4,17 @@ import img3 from '../assets/fapg.jpeg';
 import img4 from '../assets/pricesearch.jpg';
 import img5 from '../assets/tecsus.jpg';
 import img6 from '../assets/img6.jpeg';
+import novaleImg from '../assets/novale.jpeg';
+import wikiAlphabetImg from '../assets/wiki-alphabet.png';
+import dbsnoopImg from '../assets/dbsnoop.webp';
+import api2026Img from '../assets/api2026.jpeg';
 
 const experiencias_data = [
     {
         p_no: 101,
         categoria: "profissional",
         p_nome: "Novale Soluções",
+        p_img: novaleImg,
         shortDescription: "Desenvolvedor Fullstack · Atual",
         descricao: "Atuo como Desenvolvedor Full Stack, participando do desenvolvimento e manutenção de sistemas corporativos voltados para gestão operacional, faturamento e telecomunicações. Sou responsável pela criação de interfaces web, relatórios gerenciais e funcionalidades de negócio, atuando tanto no backend quanto no frontend. Possuo experiência no desenvolvimento de APIs REST, integrações com sistemas externos, modelagem e otimização de bancos de dados relacionais, além da implementação de regras de negócio complexas relacionadas a faturamento, validação de dados e automação de processos operacionais. Também atuo na análise e otimização de consultas SQL, criação de rotinas para processamento de grandes volumes de dados, geração de relatórios em Excel e PDF, além do desenvolvimento de soluções utilizando PHP, Laravel, JavaScript, MySQL e PostgreSQL.",
         contribuicao: "Cargo: Desenvolvedor Fullstack. Atuação no desenvolvimento de interfaces e na criação de relatórios de Faturamento.",
@@ -19,6 +24,7 @@ const experiencias_data = [
         p_no: 102,
         categoria: "profissional",
         p_nome: "Wiki Alphabet",
+        p_img: wikiAlphabetImg,
         shortDescription: "Desenvolvedor Frontend Júnior",
         descricao: "Atuei como Desenvolvedor Frontend Júnior em um projeto mobile, contribuindo para o desenvolvimento de funcionalidades relacionadas à autenticação, segurança e experiência do usuário. Implementei a integração com o sistema de autenticação OAuth do Google para gerenciamento de acesso e identidade dos usuários. Além disso, desenvolvi mecanismos de bloqueio temporário do dispositivo com configurações personalizáveis, aplicando conceitos de gerenciamento de estado, persistência de dados e interação com recursos nativos da plataforma mobile.",
         contribuicao: "Cargo: Frontend Júnior. Responsável pela autenticação via Google OAuth e pela funcionalidade de bloqueio do dispositivo por tempo configurável.",
@@ -28,6 +34,7 @@ const experiencias_data = [
         p_no: 103,
         categoria: "profissional",
         p_nome: "DBSnoop",
+        p_img: dbsnoopImg,
         shortDescription: "Estágio · Frontend",
         descricao: "Fui responsável pelo frontend da aplicação web, onde criei diversas interfaces de dashboard e tutoriais de instalação do agente que verificava os logs dentro das instâncias do cliente — incluindo a liberação de permissões no banco de dados, entre outras configurações.",
         contribuicao: "Cargo: Estagiário de Frontend. Desenvolvimento de dashboards e dos tutoriais de instalação do agente de monitoramento de logs.",
@@ -101,6 +108,17 @@ const projetos_data = [
         soft_skills: "SOFT SKILLS: Durante o desenvolvimento deste sistema, aprendi a importância de entender as necessidades específicas do ambiente militar e adaptar o produto para atender a essas demandas. A comunicação clara e objetiva foi fundamental para garantir que o sistema fosse intuitivo e fácil de usar. Além disso, tive que lidar com desafios técnicos relacionados à segurança dos dados, o que me ajudou a desenvolver habilidades de resolução de problemas.",
         hard_skills: "HARD SKILLS: Java, Spring Boot, Python, TypeScript, Vue, PostgreSQL, GitHub",
         link: 'https://github.com/Code-Nine-FTC/API-2025.2'
+    },
+    {
+        p_no: 7,
+        categoria: "academico",
+        p_nome: "Chatbox Atlas API-2026-1",
+        p_img: api2026Img,
+        descricao: "Desenvolvemos um sistema de chatbox para Visiona, permitindo o gerenciamento imóveis rurais. O sistema foi projetado para ser seguro e fácil de usar.",
+        contribuicao: "Contribuições Pessoais: Product Owner - Fui responsável pelo planejamento do Produto, utilizando tecnologias modernas para garantir a segurança e eficiência do gerenciamento. Também participei da definição das funcionalidades e do fluxo de trabalho do sistema. Fiz a implementação e lógica de pipeline de LLM para execução de resposta.",
+        soft_skills: "SOFT SKILLS: Durante o desenvolvimento deste sistema, aprendi a importância de entender as necessidades específicas do ambiente militar e adaptar o produto para atender a essas demandas. A comunicação clara e objetiva foi fundamental para garantir que o sistema fosse intuitivo e fácil de usar. Além disso, tive que lidar com desafios técnicos relacionados à segurança dos dados, o que me ajudou a desenvolver habilidades de resolução de problemas.",
+        hard_skills: "HARD SKILLS: Python, TypeScript, PostgreSQL, GitHub",
+        link: 'https://github.com/Code-Nine-FTC/API-2026.1'
     }
 ];
 
