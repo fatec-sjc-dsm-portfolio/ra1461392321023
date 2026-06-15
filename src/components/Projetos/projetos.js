@@ -31,7 +31,7 @@ const Projetos = () => {
 
   const loadMoreProjects = () => {
     setVisibleProjects((prevCount) =>
-      prevCount + 2 <= projetos_data.length ? prevCount + 2 : prevCount
+      Math.min(prevCount + 2, projetos_data.length)
     );
   };
 
