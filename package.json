@@ -44,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://oliveirapedro09.github.io/portfolio-pedro/",
+  "homepage": ".",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }

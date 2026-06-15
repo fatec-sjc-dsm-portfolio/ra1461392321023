@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Modal, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import arrow from "../../assets/arrow_icon.svg";
-import pattern from "../../assets/pattern.svg";
 import projetos_data, { experiencias_data } from "../../assets/projetos_data";
 import styles from "./projetos.module.css";
 import { FaChevronDown, FaGithub, FaBriefcase } from "react-icons/fa";
