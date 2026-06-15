@@ -39,7 +39,7 @@ const Projetos = () => {
     <div
       key={projeto.p_no ?? index}
       className={`${styles.projetoCard} ${
-        isVisible ? styles["appear-delay-" + index] : ""
+        isVisible ? styles["appear-delay-" + Math.min(index, 5)] : ""
       }`}
     >
       <a
