@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-pedro/static/css/main.0abc8458.css",
-    "main.js": "/portfolio-pedro/static/js/main.2304a751.js",
-    "static/media/CIANP.png": "/portfolio-pedro/static/media/CIANP.85164db887a38dd6d6e8.png",
-    "static/media/fapg.jpeg": "/portfolio-pedro/static/media/fapg.0604b34877255a7037d7.jpeg",
-    "static/media/pricesearch.jpg": "/portfolio-pedro/static/media/pricesearch.ae4cd3dab26448b1e5f2.jpg",
-    "static/media/tecsus.jpg": "/portfolio-pedro/static/media/tecsus.7676604899307315fbc9.jpg",
-    "static/media/HelpDesk.jpeg": "/portfolio-pedro/static/media/HelpDesk.e1e8a43a66af48bf391a.jpeg",
-    "static/media/img6.jpeg": "/portfolio-pedro/static/media/img6.f7a15810df985ca6dfe9.jpeg",
-    "static/media/pedro.jpg": "/portfolio-pedro/static/media/pedro.431fbe77b178ce5229cd.jpg",
-    "static/media/pattern.svg": "/portfolio-pedro/static/media/pattern.9820fa4fe78f28b4df780e7dfa299880.svg",
-    "static/media/call_icon.svg": "/portfolio-pedro/static/media/call_icon.2217d95fcbab55eab7307b4929ec13e0.svg",
-    "index.html": "/portfolio-pedro/index.html",
-    "static/media/arrow_icon.svg": "/portfolio-pedro/static/media/arrow_icon.f169ae5deeae7412caddb7034d295d3b.svg",
-    "main.0abc8458.css.map": "/portfolio-pedro/static/css/main.0abc8458.css.map",
-    "main.2304a751.js.map": "/portfolio-pedro/static/js/main.2304a751.js.map"
+    "main.css": "./static/css/main.0abc8458.css",
+    "main.js": "./static/js/main.461e0d6d.js",
+    "static/media/CIANP.png": "./static/media/CIANP.85164db887a38dd6d6e8.png",
+    "static/media/fapg.jpeg": "./static/media/fapg.0604b34877255a7037d7.jpeg",
+    "static/media/pricesearch.jpg": "./static/media/pricesearch.ae4cd3dab26448b1e5f2.jpg",
+    "static/media/tecsus.jpg": "./static/media/tecsus.7676604899307315fbc9.jpg",
+    "static/media/HelpDesk.jpeg": "./static/media/HelpDesk.e1e8a43a66af48bf391a.jpeg",
+    "static/media/img6.jpeg": "./static/media/img6.f7a15810df985ca6dfe9.jpeg",
+    "static/media/pedro.jpg": "./static/media/pedro.431fbe77b178ce5229cd.jpg",
+    "static/media/call_icon.svg": "./static/media/call_icon.2217d95fcbab55eab7307b4929ec13e0.svg",
+    "index.html": "./index.html",
+    "static/media/arrow_icon.svg": "./static/media/arrow_icon.f169ae5deeae7412caddb7034d295d3b.svg",
+    "main.0abc8458.css.map": "./static/css/main.0abc8458.css.map",
+    "main.461e0d6d.js.map": "./static/js/main.461e0d6d.js.map"
   },
   "entrypoints": [
     "static/css/main.0abc8458.css",
-    "static/js/main.2304a751.js"
+    "static/js/main.461e0d6d.js"
   ]
 }
