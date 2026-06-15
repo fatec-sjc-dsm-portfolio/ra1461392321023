@@ -3,9 +3,9 @@ import { Modal, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import arrow from "../../assets/arrow_icon.svg";
 import pattern from "../../assets/pattern.svg";
-import projetos_data from "../../assets/projetos_data";
+import projetos_data, { experiencias_data } from "../../assets/projetos_data";
 import styles from "./projetos.module.css";
-import { FaChevronDown, FaGithub } from "react-icons/fa";
+import { FaChevronDown, FaGithub, FaBriefcase } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Projetos = () => {
@@ -36,6 +36,41 @@ const Projetos = () => {
     );
   };
 
+  const renderCard = (projeto, index) => (
+    <div
+      key={projeto.p_no ?? index}
+      className={`${styles.projetoCard} ${
+        isVisible ? styles["appear-delay-" + index] : ""
+      }`}
+    >
+      <a
+        href={projeto.link || "#"}
+        onClick={(e) => {
+          e.preventDefault();
+          handleShow(projeto);
+        }}
+      >
+        <div className={styles.cardImageContainer}>
+          {projeto.p_img ? (
+            <img
+              className={styles.imgs}
+              src={projeto.p_img}
+              alt={projeto.p_nome}
+            />
+          ) : (
+            <div className={styles.cardPlaceholder}>
+              <FaBriefcase className={styles.placeholderIcon} />
+            </div>
+          )}
+        </div>
+        <div className={styles.projetoOverlay}>
+          <h3>{projeto.p_nome}</h3>
+          <p>{projeto.shortDescription || "Clique para ver mais detalhes"}</p>
+        </div>
+      </a>
+    </div>
+  );
+
   return (
     <section id="projetos" className={styles.projetosSection}>
       <div className={`${styles.container} ${isVisible ? styles.visible : ""}`}>
@@ -45,45 +80,31 @@ const Projetos = () => {
           <div className={styles.titleUnderline}></div>
         </div>
 
-        <div className={styles.projetosContainer}>
-          {projetos_data.slice(0, visibleProjects).map((projeto, index) => (
-            <div
-              key={index}
-              className={`${styles.projetoCard} ${
-                isVisible ? styles["appear-delay-" + index] : ""
-              }`}
-            >
-              <a
-                href={projeto.link || "#"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleShow(projeto);
-                }}
-              >
-                <div className={styles.cardImageContainer}>
-                  <img
-                    className={styles.imgs}
-                    src={projeto.p_img}
-                    alt={projeto.p_nome}
-                  />
-                </div>
-                <div className={styles.projetoOverlay}>
-                  <h3>{projeto.p_nome}</h3>
-                  <p>
-                    {projeto.shortDescription ||
-                      "Clique para ver mais detalhes"}
-                  </p>
-                </div>
-              </a>
+        {experiencias_data.length > 0 && (
+          <div className={styles.categoriaGroup}>
+            <h3 className={styles.categoriaTitulo}>Experiência Profissional</h3>
+            <div className={styles.projetosContainer}>
+              {experiencias_data.map((projeto, index) =>
+                renderCard(projeto, index)
+              )}
             </div>
-          ))}
-        </div>
-
-        {visibleProjects < projetos_data.length && (
-          <button className={styles.loadMoreBtn} onClick={loadMoreProjects}>
-            Carregar Mais Projetos
-          </button>
+          </div>
         )}
+
+        <div className={styles.categoriaGroup}>
+          <h3 className={styles.categoriaTitulo}>Projetos Acadêmicos</h3>
+          <div className={styles.projetosContainer}>
+            {projetos_data
+              .slice(0, visibleProjects)
+              .map((projeto, index) => renderCard(projeto, index))}
+          </div>
+
+          {visibleProjects < projetos_data.length && (
+            <button className={styles.loadMoreBtn} onClick={loadMoreProjects}>
+              Carregar Mais Projetos
+            </button>
+          )}
+        </div>
 
         <div className={styles.projetosMais} onClick={handleMostrarMaisClick}>
           <FaGithub className={styles.githubIcon} />
@@ -114,11 +135,13 @@ const Projetos = () => {
           </Modal.Header>
           <Modal.Body className={styles.modalBody}>
             <div className={styles.modalContent}>
-              <img
-                src={selectedProject.p_img}
-                alt={selectedProject.p_nome}
-                className={styles.modalImg}
-              />
+              {selectedProject.p_img && (
+                <img
+                  src={selectedProject.p_img}
+                  alt={selectedProject.p_nome}
+                  className={styles.modalImg}
+                />
+              )}
 
               <div className={styles.modalDescription}>
                 <h4>Descrição</h4>

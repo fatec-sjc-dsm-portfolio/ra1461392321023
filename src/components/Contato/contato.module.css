@@ -22,7 +22,7 @@
 
 .contatoContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
     width: 100%;
 }
@@ -86,13 +86,14 @@
 
 .contatoContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 3rem;
     width: 100%;
 }
 
 .contatoInfo {
     flex: 1;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     background-color: white;

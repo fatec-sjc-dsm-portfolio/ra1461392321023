@@ -55,11 +55,25 @@
     border-radius: 2px;
 }
 
+.categoriaGroup {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.categoriaTitulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 2rem;
+    padding-left: 1rem;
+    border-left: 4px solid #0070f3;
+}
+
 .projetosContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .projetoCard {
@@ -99,6 +113,25 @@
 .cardImageContainer {
     height: 220px;
     overflow: hidden;
+}
+
+.cardPlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0070f3, #00c9ff);
+    transition: all 0.5s ease;
+}
+
+.projetoCard:hover .cardPlaceholder {
+    transform: scale(1.08);
+}
+
+.placeholderIcon {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .imgs {

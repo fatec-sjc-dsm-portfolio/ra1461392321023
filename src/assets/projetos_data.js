@@ -5,10 +5,41 @@ import img4 from '../assets/pricesearch.jpg';
 import img5 from '../assets/tecsus.jpg';
 import img6 from '../assets/img6.jpeg';
 
+const experiencias_data = [
+    {
+        p_no: 101,
+        categoria: "profissional",
+        p_nome: "Novale Soluções",
+        shortDescription: "Desenvolvedor Fullstack · Atual",
+        descricao: "Atuo como Desenvolvedor Full Stack, participando do desenvolvimento e manutenção de sistemas corporativos voltados para gestão operacional, faturamento e telecomunicações. Sou responsável pela criação de interfaces web, relatórios gerenciais e funcionalidades de negócio, atuando tanto no backend quanto no frontend. Possuo experiência no desenvolvimento de APIs REST, integrações com sistemas externos, modelagem e otimização de bancos de dados relacionais, além da implementação de regras de negócio complexas relacionadas a faturamento, validação de dados e automação de processos operacionais. Também atuo na análise e otimização de consultas SQL, criação de rotinas para processamento de grandes volumes de dados, geração de relatórios em Excel e PDF, além do desenvolvimento de soluções utilizando PHP, Laravel, JavaScript, MySQL e PostgreSQL.",
+        contribuicao: "Cargo: Desenvolvedor Fullstack. Atuação no desenvolvimento de interfaces e na criação de relatórios de Faturamento.",
+        hard_skills: "HARD SKILLS: PHP, MySQL"
+    },
+    {
+        p_no: 102,
+        categoria: "profissional",
+        p_nome: "Wiki Alphabet",
+        shortDescription: "Desenvolvedor Frontend Júnior",
+        descricao: "Atuei como Desenvolvedor Frontend Júnior em um projeto mobile, contribuindo para o desenvolvimento de funcionalidades relacionadas à autenticação, segurança e experiência do usuário. Implementei a integração com o sistema de autenticação OAuth do Google para gerenciamento de acesso e identidade dos usuários. Além disso, desenvolvi mecanismos de bloqueio temporário do dispositivo com configurações personalizáveis, aplicando conceitos de gerenciamento de estado, persistência de dados e interação com recursos nativos da plataforma mobile.",
+        contribuicao: "Cargo: Frontend Júnior. Responsável pela autenticação via Google OAuth e pela funcionalidade de bloqueio do dispositivo por tempo configurável.",
+        hard_skills: "HARD SKILLS: Angular, TypeScript"
+    },
+    {
+        p_no: 103,
+        categoria: "profissional",
+        p_nome: "DBSnoop",
+        shortDescription: "Estágio · Frontend",
+        descricao: "Fui responsável pelo frontend da aplicação web, onde criei diversas interfaces de dashboard e tutoriais de instalação do agente que verificava os logs dentro das instâncias do cliente — incluindo a liberação de permissões no banco de dados, entre outras configurações.",
+        contribuicao: "Cargo: Estagiário de Frontend. Desenvolvimento de dashboards e dos tutoriais de instalação do agente de monitoramento de logs.",
+        hard_skills: "HARD SKILLS: Vue 2, Nuxt 2, PHP (Backend), MySQL"
+    }
+];
+
 const projetos_data = [
     {
         p_no: 1,
-        p_nome: "Site Nefrologia Pediátrica",
+        categoria: "academico",
+        p_nome: "Site Nefrologia Pediátrica API-2023-2",
         p_img: img1,
         descricao: "Em 2023-2 criamos um projeto para pessoas que procuram se manter informadas sobre nefro pediatria. O projeto CIANP (Centro de Informações e Ajuda Nefro-Pediátrica) tem como objetivo trazer informações e dados relevantes à quem procura sobre esse assunto tão pouco comentado. As informações estão muito dispersas na internet, o CIANP traz facilidade nessa busca e apoio para encontrar o local mais adequado para o tratamento necessário para saúde da criança. Compartilhamento de suas histórias está incluso a todos aqueles que buscam um conforto a mais nesse momento delicado.",
         contribuicao: "Contribuições Pessoais: Product Owner - Compreendi as necessidades e expectativas do cliente em relação ao projeto e, com base nesse entendimento, desenvolvi o protótipo. Além disso, comuniquei à equipe o que deveria ser feito para atender aos requisitos do cliente, alinhando todos os envolvidos ao objetivo final. ",
@@ -18,7 +49,8 @@ const projetos_data = [
     },
     {
         p_no: 2,
-        p_nome: "Help Desk",
+        categoria: "academico",
+        p_nome: "Help Desk API-2024-1",
         p_img: img2,
         descricao:"Em 2024-1 criamos um projeto com o objetivo de desenvolver um sistema capaz de implementar melhorias no sistema de chamados e serviços, possuindo sistema de cadastro, criação de chamados a serem atendidos, registro de conclusão dos atendimentos e sistema de relátorios para análise. Atendendo no ramo de entregas, visando solucionar problemas relacionados a frete, rastreamento, dentre outros. ",
         contribuicao: "Contribuições Pessoais: Desenvolvedor - Fui responsável pela criação da interface de ChatBox para comunicação com o cliente, assegurando a entrega dentro do prazo estipulado pela equipe e contribuindo para a qualidade do produto final. Também participei ativamente das reuniões de planejamento e definição de prioridades, colaborando para a organização e eficiência do projeto como um todo. ",
@@ -28,7 +60,8 @@ const projetos_data = [
     },
     {
         p_no: 3,
-        p_nome: "FAPG",
+        categoria: "academico",
+        p_nome: "FAPG API-2024-2",
         p_img: img3,
         descricao:"Em 2024-2 criamos um projeto com o objetivo de produzir um portal de transparência para FAPG, visando a capacidade de inserção de dados dos projetos, busca utilizando filtros, portabilidade dos dados do sistema legado e a formulação de estatísticas acerca dos projetos cadastrados sendo exibidas em gráficos e contendo filtros aplicáveis.",
         contribuicao: "Contribuições Pessoais: Product Owner - Fui responsável por definir as prioridades do projeto, garantindo que as necessidades do cliente fossem atendidas e que o produto final fosse entregue dentro do prazo estipulado. Além disso, participei ativamente das reuniões de planejamento e definição de tarefas, colaborando para a organização e eficiência do projeto. Tivemos certas dificuldades de comunicação com a equipe por ter sido reformulada duas vezes e por isso, tive que me adaptar rapidamente e aprender a lidar com a pressão de entregar um produto de qualidade dentro do prazo. ",
@@ -38,6 +71,7 @@ const projetos_data = [
     },
     {
         p_no: 4,
+        categoria: "academico",
         p_nome: "Telegram Price Search Bot",
         p_img: img4,
         descricao: "Desenvolvi um bot para o Telegram que permite aos usuários pesquisar preços de produtos em diferentes sites de e-commerce. O bot utiliza a API do Telegram para interagir com os usuários e realizar buscas em sites como Amazon, Mercado Livre e outros, retornando os melhores preços encontrados.",
@@ -48,7 +82,8 @@ const projetos_data = [
     },
     {
         p_no: 5,
-        p_nome: "Estações Climáticas Tecsus",
+        categoria: "academico",
+        p_nome: "Estações Climáticas Tecsus API-2025-1",
         p_img: img5,
         descricao: "Desenvolvemos um sistema de monitoramento para estações climáticas, permitindo a coleta e análise de dados em tempo real. O sistema foi projetado para ser escalável e fácil de integrar com outras plataformas.",
         contribuicao: "Contribuições Pessoais: Product Owner - Fui responsável por definir as funcionalidades do sistema, garantindo que atendessem às necessidades dos usuários e fossem viáveis tecnicamente. Fui responsável pela arquitetura do sistema, definindo como os dados seriam coletados, armazenados e apresentados. Além disso, participei ativamente das reuniões de planejamento e definição de prioridades, colaborando para a organização e eficiência do projeto. Fui responsável pela configuração da Estação Climática e envio de dados para o banco de dados, além de prototipar a interface de visualização dos dados coletados. Assim como fui responsável pela o fluxo de desenvolvimento em DevOps e pela integração contínua do sistema.",
@@ -58,7 +93,8 @@ const projetos_data = [
     },
     {
         p_no: 6,
-        p_nome: "Administração Guarnição Militar",
+        categoria: "academico",
+        p_nome: "Administração Guarnição Militar API-2025-2",
         p_img: img6,
         descricao: "Desenvolvemos um sistema de administração para guarnições militares, permitindo o gerenciamento eficiente de recursos, pessoal e operações. O sistema foi projetado para ser seguro e fácil de usar.",
         contribuicao: "Contribuições Pessoais: Desenvolvedor - Fui responsável pela implementação do sistema web, utilizando tecnologias modernas para garantir a segurança e eficiência do gerenciamento. Também participei da definição das funcionalidades e do fluxo de trabalho do sistema. Fiz a implementação e lógica de IA para previsão de consumo e estoque de materiais.",
@@ -68,4 +104,5 @@ const projetos_data = [
     }
 ];
 
+export { experiencias_data };
 export default projetos_data;

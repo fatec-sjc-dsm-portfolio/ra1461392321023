@@ -27,7 +27,10 @@ const Sobre = () => {
                 Valorizo a colaboração em equipe e o feedback contínuo que o
                 Scrum proporciona. Meu foco está em entregar soluções práticas e
                 eficientes, adaptando-me rapidamente às mudanças e novas
-                tecnologias.
+                tecnologias. Fora do mundo da programação, sou apaixonado por
+                futebol e por acompanhar esportes automobilísticos em geral,
+                interesses que reforçam meu lado competitivo, estratégico e de
+                trabalho em equipe.
               </p>
             </div>
           </div>
